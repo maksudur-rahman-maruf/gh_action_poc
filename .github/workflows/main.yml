@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run custom greeting action
-        uses: ./my-github-action  # Local path to your action
+        uses: ./gh_action_poc  # Local path to your action
         with:
           name: 'Test User'
