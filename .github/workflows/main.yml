@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run custom greeting action
-        uses: ./gh_action_poc  # Local path to your action
+        uses: maksudur-rahman-maruf/gh_action_poc@main  # Local path to your action
         with:
           name: 'Test User'
