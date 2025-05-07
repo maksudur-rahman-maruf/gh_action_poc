@@ -1,0 +1,11 @@
+name: 'gh_action_poc'
+description: 'A simple custom JavaScript-based GitHub Action to greet the user'
+author: 'Your Name'
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: true
+    default: 'World'
+runs:
+  using: 'node20'
+  main: 'index.js'
