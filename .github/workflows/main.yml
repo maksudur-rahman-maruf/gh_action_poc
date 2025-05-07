@@ -8,12 +8,8 @@ jobs:
     steps:
       - run: echo "Running on Ubuntu"
 
-  windows-job:
-    runs-on: windows-latest
+  ubuntu-job2:
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "Running on Windows"
+      - run: echo "Running on Ubuntu2"
 
-  macos-job:
-    runs-on: macos-latest
-    steps:
-      - run: echo "Running on macOS"
