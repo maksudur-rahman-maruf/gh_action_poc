@@ -9,6 +9,7 @@ jobs:
       - run: echo "Running on Ubuntu"
 
   ubuntu-job2:
+    needs: ubuntu-job
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running on Ubuntu2"
