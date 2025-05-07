@@ -1,14 +1,19 @@
-name: Example Workflow
+name: Multi-OS CI
 
 on: [push]
 
 jobs:
-  greeting_job:
+  ubuntu-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - run: echo "Running on Ubuntu"
 
-      - name: Run custom greeting action
-        uses: maksudur-rahman-maruf/gh_action_poc@main  # Local path to your action
-        with:
-          name: 'Test User'
+  windows-job:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Running on Windows"
+
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - run: echo "Running on macOS"
