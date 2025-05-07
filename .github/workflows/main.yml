@@ -1,0 +1,14 @@
+name: Example Workflow
+
+on: [push]
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run custom greeting action
+        uses: ./my-github-action  # Local path to your action
+        with:
+          name: 'Test User'
