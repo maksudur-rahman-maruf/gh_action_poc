@@ -3,13 +3,23 @@ name: Multi-OS CI
 on: [push]
 
 jobs:
-
-  ubuntu-job2:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        node: [14, 16]
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Running on Ubuntu2"
+        - run: echo "Running on Ubuntu2"
+    container:
+      image: node:16
+      
+    
+
+# jobs:
+
+#   ubuntu-job2:
+#     strategy:
+#       matrix:
+#         os: [ubuntu-latest, windows-latest]
+#         node: [14, 16]
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "Running on Ubuntu2"
 
